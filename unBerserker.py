@@ -6,21 +6,24 @@ class color:
 def main():
     os.system('cls' if os.name == 'nt' else 'clear')
     print(f'[ {color.YELLOW}>{color.STOP} ] {color.GREEN}{color.BOLD}unBerserker{color.STOP}\n[ {color.YELLOW}>{color.STOP} ] {color.GRAY}Made with {color.RED}<3{color.GRAY} by{color.STOP} Artic ({color.DARK_CYAN}{color.UNDERLINED}https://github.com/ArticOff{color.STOP})\n')
-    with open(input(f'[ {color.MAGENTA}?{color.STOP} ] {color.GRAY}Enter the file\'s name:{color.STOP} ')) as code:
-        data = code.read()
-        try:
-            s1 = re.search("if self.(.+?) in open", data).group(1)
-            s1s = s1.replace("15", "12"); s2 = re.findall("{(.+?)}", data)
-            source = (data.replace(s1, s1s).replace("{" + s2[0] + "}", "print").replace(",{" + s2[1] + "}()", ""))
-        except AttributeError:
-            return input(f'\n[ {color.RED}>{color.STOP} ] {color.GRAY}Please, enter a obfuscated file !{color.STOP}\n\nPress enter to continue... ')
-        print('')
-        f = open('tmpfile.py', "w")
-        f.write(source)
-        f.close()
-        subprocess.run(f"py tmpfile.py")
-        os.unlink('tmpfile.py')
-        return input(f'\n[ {color.MAGENTA}*{color.STOP} ] {color.GRAY}Thanks for using our unberserker !{color.STOP}\n\nPress enter to continue... ') | exit()
+    try:
+        with open(input(f'[ {color.MAGENTA}?{color.STOP} ] {color.GRAY}Enter the file\'s name:{color.STOP} ')) as code:
+            data = code.read()
+            try:
+                s1 = re.search("if self.(.+?) in open", data).group(1)
+                s1s = s1.replace("15", "12"); s2 = re.findall("{(.+?)}", data)
+                source = (data.replace(s1, s1s).replace("{" + s2[0] + "}", "print").replace(",{" + s2[1] + "}()", ""))
+            except AttributeError:
+                return input(f'\n[ {color.RED}>{color.STOP} ] {color.GRAY}Please, enter a obfuscated file !{color.STOP}\n\nPress enter to continue... ')
+            print('')
+            f = open('tmpfile.py', "w")
+            f.write(source)
+            f.close()
+            subprocess.run(f"py tmpfile.py")
+            os.unlink('tmpfile.py')
+            return input(f'\n[ {color.MAGENTA}*{color.STOP} ] {color.GRAY}Thanks for using our unberserker !{color.STOP}\n\nPress enter to continue... ') | exit()
+    except FileNotFoundError:
+        return input(f'\n[ {color.RED}>{color.STOP} ] {color.GRAY}This file does not exist !{color.STOP}\n\nPress enter to continue... ')
 
 if __name__ == "__main__":
     main()
