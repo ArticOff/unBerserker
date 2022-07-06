@@ -20,7 +20,7 @@ def main():
         f.close()
         subprocess.run(f"py tmpfile.py")
         os.unlink('tmpfile.py')
-        return input(f'\n[ {color.MAGENTA}*{color.STOP} ] {color.GRAY}Thanks for using our nitro generator !{color.STOP}\n\nPress enter to continue... ') | exit()
+        return input(f'\n[ {color.MAGENTA}*{color.STOP} ] {color.GRAY}Thanks for using our unberserker !{color.STOP}\n\nPress enter to continue... ') | exit()
 
 if __name__ == "__main__":
     main()
