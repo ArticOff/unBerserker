@@ -16,7 +16,7 @@ def main():
             except AttributeError:
                 return input(f'\n[ {color.RED}>{color.STOP} ] {color.GRAY}Please, enter a obfuscated file !{color.STOP}\n\nPress enter to continue... ')
             print('')
-            f = open('tmpfile.py', "w")
+            f = open('tmpfile.py', "w", encoding='utf-8')
             f.write(source)
             f.close()
             subprocess.run(f"py tmpfile.py")
