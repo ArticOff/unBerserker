@@ -6,13 +6,13 @@ The project is under development
 
 ## Examples
 
-### original file
+### original file (a.py)
 ![image](https://user-images.githubusercontent.com/81034458/177619521-7deed336-74c5-4317-9572-9e6fd6036bb8.png)
 
-### berserked file
+### berserked file (a-obf.py)
 ![image](https://user-images.githubusercontent.com/81034458/177619610-2e121aab-b8d6-4dfc-aae1-13265eea5fd2.png)
 
-### unberserked file
+### unberserked file (unBerserker.py)
 ![image](https://user-images.githubusercontent.com/81034458/177620173-2d3caafe-b54c-4afd-9309-6f0952c12daf.png)
 
 ## How to install it ?
