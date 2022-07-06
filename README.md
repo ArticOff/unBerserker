@@ -4,6 +4,17 @@
 
 The project is under development
 
+## Examples
+
+### original file
+![image](https://user-images.githubusercontent.com/81034458/177619521-7deed336-74c5-4317-9572-9e6fd6036bb8.png)
+
+### berserked file
+![image](https://user-images.githubusercontent.com/81034458/177619610-2e121aab-b8d6-4dfc-aae1-13265eea5fd2.png)
+
+### unberserked file
+![image](https://user-images.githubusercontent.com/81034458/177620173-2d3caafe-b54c-4afd-9309-6f0952c12daf.png)
+
 ## How to install it ?
 
 1. [Download Python](https://www.python.org/downloads/) (I recommend a recent version of Python)
